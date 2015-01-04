@@ -1,0 +1,171 @@
+#sweet-js-notification {
+  position: fixed;
+  width: 30%;
+  top: 5%;
+  left: 5%; }
+  #sweet-js-notification .close {
+    float: right;
+    width: 10px;
+    height: 10px;
+    background: transparent url(../img//cross106.png) no-repeat 0 0;
+    background-size: contain;
+    opacity: 0.5;
+    margin: 8px;
+    cursor: pointer; }
+    #sweet-js-notification .close:hover {
+      opacity: 1; }
+  #sweet-js-notification .text-holder, #sweet-js-notification .icon {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle; }
+  #sweet-js-notification .holder {
+    margin-bottom: 10px;
+    box-sizing: border-box; }
+  #sweet-js-notification .normal {
+    background: #fff;
+    color: #000; }
+  #sweet-js-notification .info {
+    background: #c2f1ff;
+    color: #000; }
+  #sweet-js-notification .success {
+    background: #67c58f;
+    color: #fff; }
+  #sweet-js-notification .warning {
+    background: #f9ff66;
+    color: #000; }
+  #sweet-js-notification .error {
+    background: #ff545b;
+    color: #fff; }
+  #sweet-js-notification .open {
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  #sweet-js-notification .remove {
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards; }
+  #sweet-js-notification .hide {
+    display: none !important; }
+  #sweet-js-notification .default.holder {
+    border-radius: 8px;
+    box-shadow: 0 15px 5px -5px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    width: 100%; }
+    #sweet-js-notification .default.holder.open {
+      -webkit-animation: default-open 0.5s;
+      animation: default-open 0.5s; }
+    #sweet-js-notification .default.holder.remove {
+      -webkit-animation: default-close 0.5s;
+      animation: default-close 0.5s; }
+    #sweet-js-notification .default.holder .icon {
+      width: 69px;
+      height: 69px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    #sweet-js-notification .default.holder .text {
+      padding: 25px; }
+    #sweet-js-notification .default.holder .text-holder {
+      width: 100%; }
+      #sweet-js-notification .default.holder .text-holder.has-icon {
+        width: calc(100% - 69px); }
+        #sweet-js-notification .default.holder .text-holder.has-icon .text {
+          padding: 25px 25px 25px 10px; }
+@-webkit-keyframes default-open {
+  0% {
+    opacity: 0;
+    transform: scale3d(1.1, 1.1, 1); }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); } }
+@-webkit-keyframes default-close {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: scale3d(0.9, 0.9, 1); } }
+  #sweet-js-notification .slide-side.holder {
+    border-radius: 8px;
+    box-shadow: 0 15px 5px -5px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    width: 100%; }
+    #sweet-js-notification .slide-side.holder.open {
+      -webkit-animation: slide-side-open 1s;
+      animation: slide-side-open 1s; }
+    #sweet-js-notification .slide-side.holder.remove {
+      -webkit-animation: slide-side-close 1s;
+      animation: slide-side-close 1s; }
+    #sweet-js-notification .slide-side.holder .icon {
+      width: 69px;
+      height: 69px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    #sweet-js-notification .slide-side.holder .text {
+      padding: 25px; }
+    #sweet-js-notification .slide-side.holder .text-holder {
+      width: 100%; }
+      #sweet-js-notification .slide-side.holder .text-holder.has-icon {
+        width: calc(100% - 69px); }
+        #sweet-js-notification .slide-side.holder .text-holder.has-icon .text {
+          padding: 25px 25px 25px 10px; }
+@-webkit-keyframes slide-side-open {
+  0% {
+    -webkit-transform: translate3d(-130%, 0, 0);
+    transform: translate3d(-130%, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes slide-side-close {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-130%, 0, 0);
+    transform: translate3d(-130%, 0, 0); } }
+  #sweet-js-notification .slide-top.holder {
+    border-radius: 8px;
+    box-shadow: 0 15px 5px -5px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    width: 100%; }
+    #sweet-js-notification .slide-top.holder.open {
+      -webkit-animation: slide-top-open 1s;
+      animation: slide-top-open 1s;
+      opacity: 0; }
+    #sweet-js-notification .slide-top.holder.remove {
+      -webkit-animation: slide-top-close 1s;
+      animation: slide-top-close 1s; }
+    #sweet-js-notification .slide-top.holder .icon {
+      width: 69px;
+      height: 69px;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    #sweet-js-notification .slide-top.holder .text {
+      padding: 25px; }
+    #sweet-js-notification .slide-top.holder .text-holder {
+      width: 100%; }
+      #sweet-js-notification .slide-top.holder .text-holder.has-icon {
+        width: calc(100% - 69px); }
+        #sweet-js-notification .slide-top.holder .text-holder.has-icon .text {
+          padding: 25px 25px 25px 10px; }
+@-webkit-keyframes slide-top-open {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -130%, 0);
+    transform: translate3d(0, -130%, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+@-webkit-keyframes slide-top-close {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -130%, 0);
+    transform: translate3d(0, -130%, 0); } }
+
+/*# sourceMappingURL=sweet-js-notification.css.map */
