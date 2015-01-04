@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sweet JS Notification Demo</title>
+    <link href="css/sweet-js-notification.css"
+          rel='stylesheet'
+          type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato'
+          rel='stylesheet'
+          type='text/css'>
+    <style>
+        body {
+            background: #651ac7;
+            color: #fff;
+            padding: 20px;
+            font-family: 'Lato', sans-serif;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.3);
+            text-decoration: none;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        .stack {
+            float: left;
+            min-width: 22%;
+            margin: 0 15px 15px 0;
+            padding: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            vertical-align: top;
+        }
+
+        .stack h3 {
+            text-align: center;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+<h1>Sweet JS Notifications</h1>
+
+<div class="stack">
+    <h3>Default notifications</h3>
+    <a href="#null"
+       onclick="notification.display('This is just a test!');">Default notification</a><br/>
+    <a href="#null"
+       onclick="notification.display('This is some important information', '', 'info');">Default info notification</a><br/>
+    <a href="#null"
+       onclick="notification.display('Congratulations, you did it!', '', 'success');">Default success notification</a><br/>
+    <a href="#null"
+       onclick="notification.display('Uh-oh...', '', 'warning');">Default warning notification</a><br/>
+    <a href="#null"
+       onclick="notification.display('Something has gone very wrong!', '', 'error');">Default error notification</a><br/>
+    <a href="#null"
+       onclick="notification.display('Did you just click the button?', 'img/help.png', 'info');">Default info notification with icon</a><br/>
+    <a href="#null"
+       onclick="notification.display('You will have to close me yourself!', '', '', '', 0);">Default notification that won't close automatically</a><br/>
+</div>
+
+<div class="stack">
+    <h3>Slide notifications</h3>
+    <a href="#null"
+       onclick="notification.display('Zoom!', '', '', 'slide');">Slide notification</a><br/>
+    <a href="#null"
+       onclick="notification.display('Here I come!', 'img/help.png', 'info', 'slide');">Slide info notification with icon</a><br/>
+</div>
+
+<div class="stack">
+    <h3>Top-slide notifications</h3>
+    <a href="#null"
+       onclick="notification.display('Did you just click the button?', 'img/help.png', '', 'slide-top', 0);">Slide notification with icon</a><br/>
+</div>
+
+<script src="js/sweet-js-notifications.js"></script>
+</body>
+</html>
